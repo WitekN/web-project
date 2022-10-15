@@ -5,10 +5,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="mobile-app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 </head>
 <body>
-    Hello world
-    project 1
+    
+    <header class="header">
+        <a href="heder__logo">
+            <svg class="header_logo-img" width="52" height="36"  viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="50.6667" height="34.6667" fill="url(#pattern0)"/>
+                <mask id="mask0_0_10" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="35">
+                <rect width="50.6667" height="34.6667" fill="url(#pattern1)"/>
+                </mask>
+                <g mask="url(#mask0_0_10)">
+                <rect width="50.6667" height="34.6667" fill="#333333"/>
+                </g>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_0_10" transform="scale(0.00552486 0.00806452)"/>
+                </pattern>
+                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_0_10" transform="scale(0.00552486 0.00806452)"/>
+                </pattern>
+                <image id="image0_0_10" width="181" height="124" xlink:href="data:image/png;base64,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"/>
+                </defs>
+                </svg>                        
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header_nav-item">Create an account </li>
+                <li class="header_nav-item">How it works</li>
+                <li class="header_nav-item">Support</li>
+                <li class="header_nav-item">FAQ</li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <body>
+        <section class="podcast__iphone">
+            <div class="podcast__content">
+                <ul class="podcast__iphone-list">
+                    <li class="podcast__iphone-list-item">
+                        <title1 class="titel1">MeshApp -</title1>
+                    </li>
+                </ul>
+                <ul class="podcast__iphone-list">
+                    <li class="podcast__iphone-list-item">
+                        <title2 class="titel2">Play Songs Like Never Before. </title2>
+                    </li>
+                </ul>
+                
+                <ul class="podcast__iphone-list">
+                    <li class="podcast__iphone-list-item">
+                        <title3 class="titel3">
+                            Don’t leave your shopping to the last minute. 
+                            The more time you have to shop around, the more you can negotiate.  
+                        </title3>
+                        
+                    </li>
+                </ul>
+                <ul class="podcast__market-list">
+                    <li class="podcast__market-list-item">
+                        <a class="podcast__market-list-link" href="https://www.apple.com/ca/app-store/">
+                            <img class="podcast__market-link-img" src="app store.png" alt="">
+                        </a>
+                    </li>
+                    <li class="podcast__market-list-item">
+                        <a class="podcast__market-list-link" href="https://www.apple.com/ca/app-store/">
+                            <img class="podcast__market-link-img" src="google play.png" alt="" >
+                        </a>
+                    </li>
+                </ul>   
+            </div>
+ 
+            <div class="body__img-iphone">
+                <img class="body__iphone" src="iphone.png" alt="">
+            </div>
+
+        </section>     
+        <section class="part">
+            <div class="part__titel">
+                <h1 class="part__titel-tekst">How it works</h1>
+            </div>
+            <div class="part__img">
+                <img class="part_img-item" src="Group 2.png" alt="">
+                <img class="part_img-item" src="Group.png" alt="">
+                <img class="part_img-item" src="Group 4.png" alt="">
+            </div>
+            <div class="part__list">
+                <ul class="part__list-level"> 
+                    <li class="part__list-item">Create an account</li>
+                </ul>
+                <ul class="part__list-level">
+                    <li class="part__list-item">Favorite the playlists</li>
+                </ul>
+                <ul class="part__list-level">
+                    <li class="part__list-item">Listen</li>
+                </ul>
+            </div>
+            <div class="part__market">
+                <ul class="part__market-list">
+                    <li class="part__market-list-item">
+                        <a class="part__market-list-link" href="https://www.apple.com/ca/app-store/">
+                            <img class="part__market-link-img" src="app store.png" alt="">
+                        </a>
+                    </li>
+                    <li class="part__market-list-item">
+                        <a class="part__market-list-link" href="https://www.apple.com/ca/app-store/">
+                            <img class="part__market-link-img" src="google play.png" alt="" >
+                        </a>
+                    </li>
+                </ul>   
+            </div>
+        </section>   
+    </body>
+    <features>
+        <section class="features__block">
+            <div class="features__block-list">
+                <ul class="features__block__text-list">
+                    <li class="features__block__text-list-item">
+                        <title1 class="features__block__text-item1">Download, Play, Enjoy.</title1>
+                    </li>
+                </ul>
+                <ul class="features__block__text-list">
+                    <li class="features__block__iphone-text-item">
+                        <p class="features__block__text-item2">Better than Spotify.</p>
+                    </li>
+                </ul>
+                <ul class="features__block__text-list">
+                    <li class="features_block__text-list-item">
+                        <p class="features_block__text-item3">White Gold began gaining popularity in the early 1900’s as an alternative to platinum. Platinum was steadily becoming more fashionable, but because of its rarity many could not afford it. Then, during World War II the government put a ban on the use of Platinum for any non-military functions and the demand for White Gold skyrocketed.  
+                        </p>  
+                    </li>
+                </ul>
+            </div>
+            <div class="features__img-iphones">
+                <img class="features__iphones" src="iphones.png" alt="">
+            </div>
+        </section>
+    </features>
+    <newsletter class="newsletter">
+        <div class="newsletter__titel">
+            <h1 class="newsletter__titel-tekst">Join us now</h1>
+            <p class="newsletter__tekst">Join us along the way of becoming great! 
+                We will send you emails containing information of how you can help us. 
+                We don’t spam.
+            </p>  
+        </div>
+        <div class="form">
+            <input class="form__email" type="text" name="Email" placeholder="Your email address" >
+            <button class="form__button">JOIN US</button>
+        </div>
+    </newsletter>
+    <footer  class="footer">
+        <div class="footer__img-logo">
+            <a href="footer__logo">
+                <svg class="footer_logo-img" width="52" height="36"  viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="50.6667" height="34.6667" fill="url(#pattern0)"/>
+                    <mask id="mask0_0_10" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="35">
+                    <rect width="50.6667" height="34.6667" fill="url(#pattern1)"/>
+                    </mask>
+                    <g mask="url(#mask0_0_10)">
+                    <rect width="50.6667" height="34.6667" fill="#FCEB6F"/>
+                    </g>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_0_10" transform="scale(0.00552486 0.00806452)"/>
+                    </pattern>
+                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_0_10" transform="scale(0.00552486 0.00806452)"/>
+                    </pattern>
+                    <image id="image0_0_10" width="181" height="124" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg>                        
+            </a>
+        </div>
+        <div class="footer__block-list">
+            <ul class="footer__list">
+                <li class="footer__list-option" href="#" >How it works </li>
+                <li class="footer__list-option" href="#" >Create an account</li>
+                <li class="footer__list-option" href="#" >Support</li>
+                <li class="footer__list-option" href="#" >FAQ</li>
+                <li class="footer__list-option" href="#" >Twitter</li>
+            </ul>
+        </div>
+
+        <div class="footer__copyright">
+            Copyright 2016 MeshApp. All Rights Reserved.
+        </div>
+    </footer>
 
 </body>
 </html>
